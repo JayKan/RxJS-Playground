@@ -16,13 +16,10 @@
     this.innerHTML = text;
   }
 
-
-  //source.subscribe( setHtml.bind(resultElement) );
-
   source.subscribe(function(text){
     resultElement.innerHTML  = text;
   });
 
-  source.subscribe( setHtml.bind( result2 ));
+  source.subscribe( setHtml.bind( result2 ) );
 
 })();
