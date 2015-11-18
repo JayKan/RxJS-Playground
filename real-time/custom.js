@@ -192,6 +192,110 @@
     ;
   }
 
+  var textUpdateTransitionDuration = 550;
+
+  /**
+   * @private
+   * @param newUser
+   * @method updateNewUser
+   */
+  function updateNewUser(newUser) {
+    var text = svgElement.selectAll('text.new-user-text').data(newUser);
+
+    text
+      .transition()
+      .duration(textUpdateTransitionDuration)
+      .style('fill-opacity', 1e-6)
+      .transition()
+      .duration(textUpdateTransitionDuration)
+      .style('fill-opacity', 1)
+      .text(function(d) {
+        return d;
+      })
+    ;
+  }
+
+  /**
+   * @private
+   * @param latestEdit
+   * @method updateEditText
+   */
+  function updateEditText(latestEdit) {
+    var text = svgElement.selectAll('text.edit-text').data(latestEdit);
+
+    text
+      .transition()
+      .duration(textUpdateTransitionDuration)
+      .style('fill-opacity', 1e-6)
+      .transition()
+      .duration(textUpdateTransitionDuration)
+      .text(function(d){
+        return d;
+      })
+    ;
+  }
+
+
+  // Create our WebSocket to get wiki updates
+  var ws = new WebSocket('ws://wiki-update-sockets.herokuapp.com/');
+
+  var openStream = fromEvent(ws, 'open');
+  var closeStream = fromEvent(ws, 'close');
+
+  var messageStream = fromEvent(ws, 'message').delaySubscription(openStream).takeUntil(closeStream);
+
+  openStream.subscribe(function() {
+    console.log('Connection opened');
+  });
+
+  closeStream.subscribe(function() {
+    console.log('Connection closed');
+  });
+
+  var updateStream = messageStream.map(function(event) {
+    var dataString = event.data;
+    return JSON.parse(dataString);
+  });
+
+  // Filter the 'update' stream for newUser events
+  var newUserStream = updateStream.filter(function(update) {
+    return update.type === 'newUser';
+  });
+
+  newUserStream.subscribe(function(results) {
+    console.log('newUserStream.subscribe() returns: ', results);
+    var format = d3.time.format('%X');
+    updateNewUser(['New user at: ' + format(new Date())]);
+  });
+
+  // Filter the 'update' stream for 'unspecified' events, which we're talking
+  // to mean edits in this case. [ listen for update.edit events ]
+  var editStream = updateStream.filter(function(update) {
+    return update.type === 'unspecified';
+  });
+  editStream.subscribe(function(results) {
+    console.log('editStream.subscribe() returns: ', results);
+    updateEditText(['Last edit: ' + results.content]);
+  });
+
+  // Calculate the rate of updates over time
+  var updateCount = updateStream.scan(function(value) {
+    return ++value;
+  }, 0);
+
+  var sampleUpdates = updateCount.sample(samplingTime);
+  var totalUpdatesBeforeLastSample = 0;
+  sampleUpdates.subscribe(function(value) {
+    updatesOverTime.push({
+      x: new Date(),
+      y: (value - totalUpdatesBeforeLastSample ) / (samplingTime / 1000)
+    });
+    if (updatesOverTime.length > maxNumberOfDataPoints) {
+      updatesOverTime.shift();
+    }
+    totalUpdatesBeforeLastSample = value;
+    update(updatesOverTime);
+  });
 
 
 })();
