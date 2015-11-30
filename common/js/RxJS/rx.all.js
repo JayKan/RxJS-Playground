@@ -6239,7 +6239,7 @@
 
       return g;
     });
-  }
+  };
 
   function toObservable(obj) {
     if (!obj) { return obj; }
