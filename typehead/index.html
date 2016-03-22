@@ -17,10 +17,26 @@
       <p class="lead">Example to show combining input events such as keyup with Ajax requests</p>
     </div>
 
+    <div class="row-fluid">
+      <form role="form">
+        <div class="form-group">
+          <label for="textInput">Enter Query for Wikipedia</label>
+          <input type="text"
+                 id="textInput"
+                 autocomplete="off"
+                 class="form-control"
+                 placeholder="Enter search term...">
+        </div>
+      </form>
+    </div>
+
+    <div class="row-fluid">
+      <ul id="results"></ul>
+    </div>
   </div>
-<script type="text/javascript" src="../common/js/jQuery/jquery-1.11.3.js"></script>
-<script type="text/javascript" src="../common/js/RxJS/rx.lite.compat.js"></script>
-<script type="text/javascript" src="./typehead.js"></script>
+  <script type="text/javascript" src="../common/js/jQuery/jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="../common/js/RxJS/rx.lite.compat.js"></script>
+  <script type="text/javascript" src="./typehead.js"></script>
 
 </body>
 </html>
