@@ -65,7 +65,6 @@
     // Grab all distinct key-up events from the input
     var keyup = Rx.Observable.fromEvent($input, 'keyup')
       .map(function(e) {
-        console.log('Search term: ', e.target.value);
         // project the text value from the input
         return e.target.value; 
       })
