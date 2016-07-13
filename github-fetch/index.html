@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Github Users Fetching Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 10px;
+    }
+    h2 {
+      font-weight: bold;
+      display: inline-block;
+    }
+    .refresh {
+      font-size: 80%;
+      margin-left: 10px;
+    }
+    .header {
+      background: #ECECEC;
+      padding: 5px;
+    }
+    .suggestions {
+      border: 2px solid #ECECEC;
+    }
+    li {
+      padding: 5px;
+    }
+    li img {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+    }
+    li .username, li .close {
+      display: inline-block;
+      position: relative;
+      bottom: 15px;
+      left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div class="header">
+        <h2>Who to follow</h2><a href="#" class="refresh">Refresh</a>
+      </div>
+      <ul class="suggestions">
+        <li class="suggestion1">
+          <img />
+          <a href="#" target="_blank" class="username">this will not be displayed</a>
+          <a href="#" class="close close1">x</a>
+        </li>
+        <li class="suggestion2">
+          <img />
+          <a href="#" target="_blank" class="username">neither this</a>
+          <a href="#" class="close close2">x</a>
+        </li>
+        <li class="suggestion3">
+          <img />
+          <a href="#" target="_blank" class="username">nor this</a>
+          <a href="#" class="close close3">x</a>
+        </li>
+      </ul>
+    </div>
+
+<script src="../common/js/jQuery/jquery-1.11.3.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/2.2.26/rx.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/2.2.26/rx.async.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/2.2.26/rx.coincidence.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/2.2.26/rx.binding.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs/2.2.26/rx.time.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rxjs-dom/2.0.7/rx.dom.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>
