@@ -1,0 +1,23 @@
+.actual-color{
+    height:50px;
+    width:50px;
+}
+
+#sample{
+    cursor: crosshair;
+}
+
+.selected-colors{
+    list-style-type: none;
+    width:50%;
+}
+
+.selected-colors li{
+    float: left;
+}
+
+.selected-colors div{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px 10px 0;
+}

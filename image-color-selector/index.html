@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        #sample {
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+<h2>Image sampler example</h2>
+<p>Hover image to check color, click on image to add to the samples</p>
+<img id="sample" src="image.png"/>
+
+<h4>Hovered color</h4>
+
+<div class="actual-color"></div>
+<h5 class="actual-color-label"></h5>
+
+<h4>Selected color samples</h4>
+<div>
+    <ul class="selected-colors">
+
+    </ul>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.6/rx.all.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
