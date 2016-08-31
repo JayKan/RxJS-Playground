@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dynamic Rendering Widget Demo</title>
+  <style>
+    canvas {
+      background-color: #333
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <label>
+      Points
+      <input id="points" type="range" min="3" max="17" value="5">
+    </label>
+  </div>
+  <div>
+    <label>
+      Outer Radius
+      <input id="outer-radius" type="range" min="3" max="300" value="200">
+    </label>
+  </div>
+  <div>
+    <label>
+      Inner Radius
+      <input id="inner-radius" type="range" min="3" max="300" value="200">
+    </label>
+  </div>
+  <div>
+    <label>
+      Clockwise
+      <input id="clockwise" type="range" min="0" max="10" value="0">
+    </label>
+  </div>
+  <div>
+    <label>
+      Line width
+      <input id="line-width" type="range" min="1" max="10" value="2">
+    </label>
+  </div>
+  <div>
+    <label>
+      Stoke Color
+      <input type="color" id="stroke-color" value="#bada55">
+    </label>
+  </div>
+  <div>
+    <label>
+      Fill Color
+      <input type="color" id="fill-color" value="#bada55">
+    </label>
+  </div>
+  <div>
+    <canvas id="canvas" width="800" height="600" />
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.6/rx.all.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
