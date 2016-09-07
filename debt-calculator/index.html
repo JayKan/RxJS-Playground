@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="RxJS form data-binding fun!">
+    <meta name="author" content="Jay Kan">
+    <title>Simple Debt Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.6/rx.all.js"></script>
+  </head>
+
+  <body>
+    <div id="app" class="one">
+      <form role="form">
+        <div class="input-group">
+          <label for="amount">Amount to borrow ($)</label>
+          <input type="number" name="amount" id="amount" value="1000" />
+        </div>
+        <div class="input-group">
+          <label for="rate">Interest rate (%)</label>
+          <input type="number" name="rate" id="rate" value="5" />
+        </div>
+        <div class="input-group">
+          <label for="amount">Number of years</label>
+          <input type="number" name="years" id="years" value="3" />
+        </div>
+        <div class="output">
+          <div id="result"></div>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
