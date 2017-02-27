@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Smart Counter in Rx5</title>
+  <style>
+    body {
+      background: #f06d06;
+      font-size: 80%;
+      padding: 20px;
+    }
+    main {
+      background: white;
+      height: 250px;
+      width: 400px;
+      margin: 50px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+    }
+
+    main div.inner {
+      background: #1d1f20;
+      color: white;
+      padding: 20px;
+      overflow: auto;
+    }
+
+    .shadow {
+      -webkit-box-shadow: 0 10px 8px -4px #1d1f20;
+      -moz-box-shadow: 0 10px 8px -4px #1d1f20;
+      box-shadow: 0 10px 8px -4px #1d1f20;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="shadow">
+    <div class="inner">
+      <h3>Smoothly transitions numbers with ease!</h3>
+      <input id="range" type="number">
+      <button id="update">Update</button>
+      <h4 id="display"></h4>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.0.1/Rx.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
