@@ -1,0 +1,51 @@
+body {
+    /*overflow: hidden;*/
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.outer {
+    overflow: hidden;
+    /*overflow: none;*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -85px;
+    height: 170px;
+}
+
+.inner {
+    position: absolute;
+    overflow: none;
+    box-sizing: border-box;
+    border-color: red;
+    border-width: 2px;
+    left: 0;
+    right: 0;
+    top: 20px;
+    bottom: 15px;
+    padding: 5px 0 5px 0;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    white-space: nowrap;
+}
+
+.box-art {
+    box-sizing: border-box;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin: 0 5px 0 5px;
+    width: 90px;
+    height: 120px;
+}
+
+.box-art img {
+    position: absolute;
+    width: 90px;
+    height: 120px;
+    pointer-events: none;
+}
