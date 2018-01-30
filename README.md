@@ -8,10 +8,27 @@
 [![PRs Welcome][prs-badge]][prs]
 [![MIT License][license-badge]][license]
 
-> Clean examples, explanations, and resources for learning and exploring RxJS without installing any extra dependencies 👊
+> Clean examples, explanations, and resources for learning and exploring RxJS in depth 👊
 
 ### Current Examples
-- [] 
+- [x] Animation Painting
+- [x] Canvas Painting
+- [x] Crop a Image
+- [x] Data Binding
+- [x] Debt Calculator
+- [x] Drag and Drop
+- [x] Dynamic Rendering
+- [x] Follow the Mouse
+- [x] Github Fetch
+- [x] Image Color Selector
+- [x] Infinite Scroll
+- [x] Letter Count
+- [x] Mario
+- [x] Mouse Tracking
+- [x] Real Time
+- [x] Smart Counter
+- [x] Typehead
+- [x] Netflix Virtual List
 
 ### Learning Resources
 * [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) - André Staltz
