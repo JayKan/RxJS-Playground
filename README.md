@@ -1,10 +1,22 @@
-# RxJS Playground
+<div align="center">
+  <h1>RxJS Playground</h1>
+
+  <h4>🌟 Clean examples, explanations, and resources for learning and exploring RxJS ✨</h4>
+</div>
+<hr />
 
 [![PRs Welcome][prs-badge]][prs]
 [![MIT License][license-badge]][license]
 
-> A list of RxJS examples
- 
+> Clean examples, explanations, and resources for learning and exploring RxJS without installing any extra dependencies 👊
+
+### Current Examples
+- [] 
+
+### Learning Resources
+* [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) - André Staltz
+* [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) - Misha Moroshko
+* [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) - Cédric Soulas
 
 ## License
 MIT © [Jay Kan](https://github.com/JayKan)
