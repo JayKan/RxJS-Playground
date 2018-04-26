@@ -6,6 +6,7 @@
 <hr />
 
 [![PRs Welcome][prs-badge]][prs]
+[![Code of Conduct][coc-badge]][coc]
 [![MIT License][license-badge]][license]
 
 > Clean examples, explanations, and resources for learning and exploring RxJS in depth 👊
@@ -30,9 +31,11 @@
 - [x] Typehead
 - [x] Netflix Virtual List
 
+### Contributing
+If you find a bug or think about enhancement or adding new examples, feel free to contribute and submit a PR. Contributions of any kind are welcome!
+
 ### Learning Resources
 * [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) - André Staltz
-* [Toy Rx - A tiny implementation of RxJS that actually works for learning](https://github.com/staltz/toy-rx) - André Staltz
 * [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) - Misha Moroshko
 * [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) - Cédric Soulas
 
@@ -43,3 +46,5 @@ MIT © [Jay Kan](https://github.com/JayKan)
 [prs]: https://github.com/JayKan/RxJS-Playground/pulls
 [license-badge]: https://img.shields.io/npm/l/express.svg?style=flat-square
 [license]: https://github.com/JayKan/RxJS-Playground/blob/master/LICENSE
+[coc-badge]: https://img.shields.io/badge/code%20of-conduct-brightgreen.svg?style=flat-square
+[coc]: https://github.com/JayKan/RxJS-Playground/blob/master/CODE_OF_CONDUCT.md
