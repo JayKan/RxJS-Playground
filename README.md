@@ -32,6 +32,7 @@
 
 ### Learning Resources
 * [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) - André Staltz
+* [Toy Rx - A tiny implementation of RxJS that actually works for learning](https://github.com/staltz/toy-rx) - André Staltz
 * [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) - Misha Moroshko
 * [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) - Cédric Soulas
 
