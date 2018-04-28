@@ -1,7 +1,8 @@
 <div align="center">
-  <h1>RxJS Playground</h1>
+  <!-- <h1>RxJS Playground</h1> -->
+  <img src="./docs/logo/RxJSplayground.jpg" alt="RxJS Playground">
 
-  <h4>🌟 Clean examples, explanations, and resources for learning and exploring RxJS ✨</h4>
+  <p>🌟 Clean examples, explanations, and resources for learning and exploring RxJS ✨</h4>
 </div>
 <hr />
 
@@ -31,9 +32,6 @@
 - [x] Typehead
 - [x] Netflix Virtual List
 
-### Contributing
-If you find a bug or think about enhancement or adding new examples, feel free to contribute and submit a PR. Contributions of any kind are welcome!
-
 ### Awesome Resources
 * [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) - Andre Staltz
 * [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) - André Staltz
@@ -41,8 +39,15 @@ If you find a bug or think about enhancement or adding new examples, feel free t
 * [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) - Misha Moroshko
 * [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) - Cédric Soulas
 
+### Contributing
+If you find a bug or think about enhancement or adding new examples, feel free to contribute and submit a PR. Contributions of any kind are welcome!
+
+> Special thanks to [Baran Pirinçal](https://github.com/baranpirincal) for an outstanding new logo design 👏 👏
+
 ## License
 MIT © [Jay Kan](https://github.com/JayKan)
+<br>
+MIT @ [Baran Pirinçal](https://github.com/baranpirincal) for the awesome new logo
 
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs]: https://github.com/JayKan/RxJS-Playground/pulls
