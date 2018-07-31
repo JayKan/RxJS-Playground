@@ -38,6 +38,7 @@
 * [Observables Under The Hood](https://netbasal.com/javascript-observables-under-the-hood-2423f760584) - Netanel Basal
 * [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) - Misha Moroshko
 * [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) - Cédric Soulas
+* [Zen Observable](https://github.com/zenparsing/zen-observable) - An implementation of Observables for JavaScript
 
 ### Contributing
 If you find a bug or think about enhancement or adding new examples, feel free to contribute and submit a PR. Contributions of any kind are welcome!
